@@ -7,4 +7,33 @@ grey - #95a5a6;
 red - #ee5253
 
 */
+/* ~~~~~~ GLOABL RULES ~~~~~~ */
 
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("assets/burger-friends.jpg");
+    background-size: cover;
+    margin: 0;
+}
+
+.test {
+    overflow:  hidden;
+    background: teal;
+    padding: 25px 25px;
+}
+
+.page-title {
+    float: left;
+}
+
+button,
+input {
+    font-size: 20px;
+    padding: 8px 20px;
+}
+button {
+    float: right;
+    text-align: center;
+    border-radius: 12px;
+    border-color: 1px teal;
+}
