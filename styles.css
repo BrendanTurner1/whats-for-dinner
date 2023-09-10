@@ -16,7 +16,21 @@ body {
     margin: 0;
 }
 
-.test {
+button,
+input {
+    position:relative;
+    font-size: 20px;
+    padding: 8px 20px;
+    top: 12px;
+    border-radius: 8px;
+}
+
+.hidden {
+    display: none!important;
+}
+/* Header  */
+
+.header {
     overflow:  hidden;
     background: teal;
     padding: 25px 25px;
@@ -26,14 +40,55 @@ body {
     float: left;
 }
 
-button,
-input {
-    font-size: 20px;
-    padding: 8px 20px;
-}
-button {
+.recipe { 
     float: right;
     text-align: center;
-    border-radius: 12px;
-    border-color: 1px teal;
+    border: none;
 }
+
+/* Main page */
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 100px;
+}
+.meal-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:white;
+    width: 550px;
+    height: 425px;
+    opacity: 80%;
+    font-size: 25px;
+}
+
+.meal-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: 550px;
+    height: 425px;
+    opacity: 80%;
+}
+form label {
+    display: block;
+}
+.submit {
+    background-color: teal;
+    border: none;
+ }
+
+ .meal-display img {
+    height: 300px;
+    width: 200px;
+ }
+
+
+/* 
+ .close {
+    ;
+ } */

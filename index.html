@@ -4,10 +4,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
-      <header class="test">
+    <section>
+      <header class="header">
         <h2 class="page-title">What's For Dinner</h2>
-        <button class="add-recipe">ADD A RECIPE</button>
+        <button class="recipe">ADD A RECIPE</button>
+        
       </header>
+    </section>
+    <section class="main">
+      <div class="meal-type">
+        <form>
+          <fieldset>
+            <legend>What are you looking for?</legend>
+            <section>
+              <input type="radio" id="mealChoice1" name="meal" value="side" checked />
+              <label for="mealChoice1">Side</label>
+              <input type="radio" id="mealChoice2" name="meal" value="mainDish" />
+              <label for="mealChoice2">Main Dish</label>
+              <input type="radio" id="mealChoice3" name="meal" value="dessert" />
+              <label for="mealChoice3">Dessert</label>
+              <input type="radio" id="mealChoice4" name="meal" value="entireMeal" />
+              <label for="mealChoice4">Entire Meal</label>
+            </section>
+            <section>
+              <button class="submit" type="submit">LET'S COOK!</button>
+            </section>
+          </fieldset>
+        </form>
+      </div>
+      <div class="meal-display">
+        <article class="cookpot">
+          <img src="assets/cookpot.svg" alt="cookpot image">
+        </article>
+        <article class="result hidden">
+          <h4>You should make:</h4>
+          <h4 class='meal-choice'></h4>
+          <button class="close">Close</button>
+        </article>
+      </div>
+
+    </section>
   </body>
   <script type="text/javascript" src="main.js"></script>
 </html>
